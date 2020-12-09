@@ -1,0 +1,23 @@
+int x;
+int y;
+bool z;
+
+int func1() {
+	x = 0;
+	y = 1;
+	if (y > x) {
+		return 12;
+	}
+	return 0;
+}
+
+void main() {
+	int r;
+	z = true;
+	if (false || z) {
+		r = func1();
+	} else {
+	r = 6;
+	}
+}
+

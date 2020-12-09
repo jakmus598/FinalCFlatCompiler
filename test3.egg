@@ -1,0 +1,73 @@
+// Test file from Jake's and Luke's P5 assignent, but with main
+
+int f(){return 0;}
+void g(){}
+bool dog;
+int z;
+
+void write(){
+	cout << "This should work";
+	cout << dog;
+
+	cin >> dog;
+	cin >> z;  
+}
+
+void number1(int one, int two){}
+
+bool number2(bool one, int two, bool three){
+	if (3 <= 4) {
+		return true;
+	}
+	return false;
+}
+
+int x;
+
+void call(){
+	number1(12, 3);
+	while (number2(false, 2, true)) {
+		return;
+	}	
+}
+
+void func3(int a){
+	if (false) {
+	} else {
+		return;
+	}
+	return;
+}
+
+void main() {
+	return;
+}
+
+int func4(){
+	return x;
+}
+
+bool func5(){
+	return number2(false, 6, true);
+}
+
+int a;
+int b;
+bool c;
+bool d;
+
+void arithmetic_operator(){
+	a = b + a;
+  	a = b + b * b; 
+	b = a / b + b * a -x;
+	a++;
+	b--;
+}
+
+void operator(){
+	d = b < a;
+        d = b <= b;
+	c = a + b != b * a;
+	c = c || d;
+	d = !c;
+}
