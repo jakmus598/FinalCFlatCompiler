@@ -45,12 +45,14 @@ class FnSym extends Sym {
     private int numParams;
     private List<Type> paramTypes;
     private int sizeOfLocals;
+    private int sizeOfParams;
     
     public FnSym(Type type, int numparams) {
         super(new FnType());
         returnType = type;
         numParams = numparams;
 	sizeOfLocals = 0;
+	sizeOfParams = 0;
     }
 
     public void addFormals(List<Type> L) {
@@ -63,6 +65,16 @@ class FnSym extends Sym {
 
     public int getNumParams() {
         return numParams;
+    }
+
+    public void setSizeOfParams(int size)
+    {
+	    sizeOfParams = size;
+    }
+
+    public int getSizeOfParams()
+    {
+	    return sizeOfParams;
     }
 
     public void setSizeOfLocals(int size)
