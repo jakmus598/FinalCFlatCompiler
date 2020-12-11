@@ -7,12 +7,12 @@ import java.util.*;
 public class Sym {
     private Type type;
     private int offset;
-    public static int currOffset;
+    public static int currOffset = -1;
     
     public Sym(Type type) {
         this.type = type;
 	this.offset = 0;
-	this.currOffset = -1;
+	//this.currOffset = -1;
     }
     
     public Type getType() {

@@ -57,7 +57,10 @@ EmptySymTableException.class: EmptySymTableException.java
 # test
 #
 test:
-	java -cp $(CP) P6 test.egg test.s
+	#java -cp $(CP) P6 test1.egg test.s
+	#java -cp $(CP) P6 test2.egg test.s
+	java -cp $(CP) P6 test3.egg test.s
+	#java -cp $(CP) P6 instrTest.egg myResults.s 
 
 ###
 # clean

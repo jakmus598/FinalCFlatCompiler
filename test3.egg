@@ -6,18 +6,67 @@ bool dog;
 int z;
 
 void write(){
-	cout << "This should work";
+	dog = true;
+	cout << "This should work\n";
+	cout << "dog: ";
 	cout << dog;
+	cout << "\n";
 
-	cin >> dog;
-	cin >> z;  
+	cout << "Read z\n";
+	cin >> z;
+	cout << "\n";
 }
 
-void number1(int one, int two){}
+void number1(int one, int two){
+	if((one < two) && true && (true || false))
+	{
+		int numViewers;
+		int numListeners;
+		bool isLive;
+		isLive = true && (dog || (false || false)) && true;
+		if(isLive)
+		{
+			numViewers = 10;
+			numListeners = 0;
+			cout << "numViewers: ";
+			cout << numViewers;
+			cout << "\n";
+			cout << "numListeners: ";
+			cout << numListeners;
+			cout << "\n";
+		}
+		else
+		{
+			cout << "Nope, not live\n";
+		}
+
+		cout << "End of check\n";
+	}
+
+	else
+	{
+		int getDublin;
+		int text;
+		getDublin = -5;
+		text = -7;
+		getDublin = text - 1;
+		cout << "getDublin: ";
+		cout << getDublin;
+		cout << "\n";
+	}
+			
+}
 
 bool number2(bool one, int two, bool three){
 	if (3 <= 4) {
-		return true;
+	   int a;
+	   a = 0;
+	   while(a < 10)
+	   {
+		cout << "Hello (a < 10)\n";
+		a++;
+	   }
+	return true;
 	}
 	return false;
 }
@@ -40,7 +89,23 @@ void func3(int a){
 }
 
 void main() {
-	return;
+	cout << "write():\n";
+	write();
+	cout << "number1(1, 2):\n";
+	number1(1, 2);
+	cout << "\n";
+	cout << "number1(2, 1):\n";
+	number1(2, 1);
+	cout << "number2(0, 1, true):\n";
+	if(number2(true, 1, true))
+	{
+		cout << "number2(true, 1, true) is true\n";
+	}
+	else
+	{
+	        cout << "number2(true, 1, true) is false (should not be)\n";
+	}
+	
 }
 
 int func4(){
